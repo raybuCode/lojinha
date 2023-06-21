@@ -9,7 +9,7 @@ public class Produto{
     private String nome;
     private double valor;
     private Tamanho tamanho;
-    public List<String> itensInclusos;
+    private List<ItemIncluso> itensInclusos;
 
     //Valor
     public double getValor(){
@@ -47,22 +47,20 @@ public class Produto{
 
     //Tamanho
     public Tamanho getTamanho(){
-
         return this.tamanho;
     }
 
     public void setTamanho(Tamanho novoTamanho){
-
         this.tamanho = novoTamanho;
     }
 
-    //Itens Inclusos
-    public List<String> getItensInclusos(){
-
-        return this.itensInclusos;
+    public List<ItemIncluso> getItensInclusos(){
+        return itensInclusos;
     }
-    public void setItensInclusos(List<String> novosItens){
 
-        this.itensInclusos = novosItens;
+    public void setItensInclusos(List<ItemIncluso> novosItensInclusos){
+        this.itensInclusos = novosItensInclusos;
     }
+
+
 }
